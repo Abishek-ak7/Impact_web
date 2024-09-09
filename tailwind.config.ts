@@ -12,8 +12,13 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        serif: ['Merriweather', 'ui-serif', 'Georgia'], 
+        darker: ['Darker', 'sans-serif'],
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
