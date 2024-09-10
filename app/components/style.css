@@ -7,3 +7,30 @@
     scrollbar-width: none;
   }
   
+ 
+
+.container {
+  @apply max-w-screen-xl;
+}
+
+.grid-cols-1 {
+  @apply md:grid-cols-2;
+}
+
+.text-4xl {
+  @apply font-bold text-gray-800;
+}
+
+.text-gray-600 {
+  @apply text-lg;
+}
+
+.rounded-lg {
+  @apply rounded-lg;
+}
+
+@font-face {
+  font-family: 'Darker';
+  src: url('../fonts/DarkerGrotesque-Regular.ttf') format('woff2'),
+       url('../fonts/DarkerGrotesque-SemiBold.ttf') format('woff');
+}

@@ -26,7 +26,7 @@ function Homepage() {
           Spotlight
         </h2>
         <div className="flex justify-center">
-          <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
+          {/* <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
             <button
               className={`px-4 py-2 rounded-md text-white font-medium bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 ${
                 isScrolling ? 'fixed top-10 right-10' : ''
@@ -48,7 +48,7 @@ function Homepage() {
             >
               Events
             </button>
-          </div>
+          </div> */}
         </div>
         <Scrollimg />
       </div>
