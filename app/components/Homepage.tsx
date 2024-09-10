@@ -1,9 +1,9 @@
 "use client"
 import React from 'react';
 import { useState, useEffect } from 'react';
-import Scrollimg from './Scrollimg';
+import EnlargeCenterCarousel from './carousel';
 
-function Homepage() {
+export default function Homepage() {
   const [isScrolling, setIsScrolling] = useState(false);
 
   useEffect(() => {
@@ -20,40 +20,18 @@ function Homepage() {
   }, []);
 
   return (
-    <div className="relative bg-blue-500">
-      <div className="container mx-auto py-8 md:py-16 px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-6 md:mb-8">
+    <div className=" bg-blue-500">
+      <div className='flex flex-col items-center justify-center'>
+        <div className='flex bg-yellow-300  mt-[5%] w-1/5 p-2 text-black gap-1 text-center rounded-full font-bold text-lg  justify-between items-center'>
+          <h1 className='bg-slate-100  w-1/3 py-2 rounded-full'>Magazine</h1>
+          <h1 className='bg-slate-100  w-1/3 py-2 rounded-full'>Podcast</h1>
+          <h1 className='bg-slate-100 w-1/3 py-2 rounded-full'>Events</h1>
+        </div>
+        </div>
+        <h2 className="text-5xl md:text-7xl mt-[5%] font-bold text-white text-center mb-6 md:mb-8">
           Spotlight
         </h2>
-        <div className="flex justify-center">
-          {/* <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
-            <button
-              className={`px-4 py-2 rounded-md text-white font-medium bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 ${
-                isScrolling ? 'fixed top-10 right-10' : ''
-              }`}
-            >
-              Magazine
-            </button>
-            <button
-              className={`px-4 py-2 rounded-md text-white font-medium bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 ${
-                isScrolling ? 'fixed top-10 right-10' : ''
-              }`}
-            >
-              Podcast
-            </button>
-            <button
-              className={`px-4 py-2 rounded-md text-white font-medium bg-gray-800 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-300 ${
-                isScrolling ? 'fixed top-10 right-10' : ''
-              }`}
-            >
-              Events
-            </button>
-          </div> */}
-        </div>
-        <Scrollimg />
+        <EnlargeCenterCarousel/>
       </div>
-    </div>
   );
 }
-
-export default Homepage;
